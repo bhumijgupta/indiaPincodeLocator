@@ -8,3 +8,4 @@
 
 Pincode accepted
 #india locator
+![GitHub Hacktober Fest](https://img.shields.io/badge/Hacktober%20Fest%202019-wpalacioshack-green)
