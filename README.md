@@ -4,7 +4,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![star this repo](http://githubbadges.com/star.svg?user=boennemann&repo=badges&style=flat)](https://github.com/boennemann/badges)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bhumijgupta/indiaPincodeLocator)
-
+![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fbhumijgupta%2FindiaPincodeLocator)
 
 Pincode accepted
 #india locator
