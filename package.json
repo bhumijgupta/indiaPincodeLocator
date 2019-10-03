@@ -1,20 +1,23 @@
 {
-  "name": "indialatlonproject",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4"
-  },
-  "engines": {
-    "node": "10.x"
-  }
+    "name": "indialatlonproject",
+    "version": "1.0.0",
+    "description": "A simple API to find latitude and longitude corresponding to a pincode",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon app.js",
+        "start": "node app.js"
+    },
+    "author": "Bhumij Gupta",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4"
+    },
+    "engines": {
+        "node": "10.x"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.3"
+    }
 }
