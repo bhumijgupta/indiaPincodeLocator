@@ -29,6 +29,16 @@
   </p>
 </p>
 
+<!-- Development Starts -->
+## How to work on this project as a developer or How to run it locally
+```sh
+  git clone thisRepository URL
+  cd indiaPincodeLocator
+  npm install
+  npm start
+```
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!-- [product-screenshot]: # -->
