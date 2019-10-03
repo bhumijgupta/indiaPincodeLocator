@@ -4,7 +4,7 @@
 
 The following contributors have contributed to this repository:
 
-* [Bhumji Gupta](https://github.com/bhumijgupta) - *Project Maintainer*
+* [Bhumij Gupta](https://github.com/bhumijgupta) - *Project Maintainer*
 * [Jamessom Queiroz](https://github.com/jamessom)
 * [Lakshya Mutneja](https://github.com/lakshyamutneja)
 * [Tommi Carleman](https://github.com/tommica)
