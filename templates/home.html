@@ -1,0 +1,19 @@
+<html lang="en">
+    <img src="https://raw.githubusercontent.com/jamessom/indiaPincodeLocator/master/logo.png" alt="India Pincode Locator">
+        <header>India Pincode Locator</header>
+        <h1>Find details about pincode.</h1>
+        <br>Syntax: /api/pincode</br>
+        <body>
+            <form onSubmit="return getPincode();">
+            <input id="pincode" type="text" maxlength="55" class="box" autofocus />
+            <input type="submit" class="submit" value="Submit" />
+            </form>
+            <script>
+            function getPincode(){
+                var response = document.getElementById('pincode').value;
+                location = 'https://indiapincodelocator.herokuapp.com/api/' + response;
+                return false;
+            }
+            </script>
+            </body>
+</html>

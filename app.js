@@ -22,7 +22,7 @@ app.get("/api/:pincode", (req, res) => {
   }
 });
 app.get("*", (req, res) => {
-  res.send("<h1>Find details about pincode.</h1><br>Syntax: /api/pincode");
+  res.send(fs.readFileSync("./templates/home.html", "utf-8"));
 });
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
