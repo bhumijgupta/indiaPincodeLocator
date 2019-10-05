@@ -1,19 +1,26 @@
+<!DOCTYPE html>
 <html lang="en">
-    <img src="https://raw.githubusercontent.com/jamessom/indiaPincodeLocator/master/logo.png" alt="India Pincode Locator">
-        <header>India Pincode Locator</header>
-        <h1>Find details about pincode.</h1>
-        <br>Syntax: /api/pincode</br>
-        <body>
-            <form onSubmit="return getPincode();">
-            <input id="pincode" type="text" maxlength="55" class="box" autofocus />
-            <input type="submit" class="submit" value="Submit" />
-            </form>
-            <script>
-            function getPincode(){
-                var response = document.getElementById('pincode').value;
-                location = 'https://indiapincodelocator.herokuapp.com/api/' + response;
-                return false;
-            }
-            </script>
-            </body>
+
+<body>
+    <img src="https://raw.githubusercontent.com/jamessom/indiaPincodeLocator/master/logo.png"
+        alt="India Pincode Locator" class="logo">
+    <h1>India Pincode Locator</h1>
+    <h3>Find details about pincode</h3>
+    <br>
+    <p class="syntax">Syntax: /api/pincode</p>
+
+    <form onSubmit="return getPincode();">
+        <input id="pincode" type="number" maxlength="55" class="box" autofocus placeholder="Enter Pincode" min="0"
+            minlength="6" maxlength="6" />&nbsp;
+        <input type="submit" class="submit" value="Submit" />
+    </form>
+    <script>
+        function getPincode() {
+            var response = document.getElementById('pincode').value;
+            location = 'https://indiapincodelocator.herokuapp.com/api/' + response;
+            return false;
+        }
+    </script>
+</body>
+
 </html>
