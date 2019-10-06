@@ -89,10 +89,20 @@
         <input id="pincode" type="number" class="box" autofocus placeholder="Enter Pincode" min="0" minlength="6" maxlength="6" />&nbsp;
         <input type="submit" class="submit" value="Submit" />
     </form>
+    <br>
+    <form onSubmit="return getPincodeByPO();">
+        <input id="po" type="text" class="box" autofocus placeholder="Enter Post Office" min="0" minlength="0" maxlength="100" />&nbsp;
+        <input type="submit" class="submit" value="Submit" />
+    </form>
     <script>
         function getPincode() {
             var response = document.getElementById('pincode').value;
-            location = 'https://indiapincodelocator.herokuapp.com/api/' + response;
+            location = '/api/' + response;
+            return false;
+        }
+        function getPincodeByPO() {
+            var response = document.getElementById('po').value;
+            location = '/api/po/' + response;
             return false;
         }
     </script>
