@@ -1,19 +1,101 @@
+<!DOCTYPE html>
 <html lang="en">
-    <img src="https://raw.githubusercontent.com/jamessom/indiaPincodeLocator/master/logo.png" alt="India Pincode Locator">
-        <header>India Pincode Locator</header>
-        <h1>Find details about pincode.</h1>
-        <br>Syntax: /api/pincode</br>
-        <body>
-            <form onSubmit="return getPincode();">
-            <input id="pincode" type="text" maxlength="55" class="box" autofocus />
-            <input type="submit" class="submit" value="Submit" />
-            </form>
-            <script>
-            function getPincode(){
-                var response = document.getElementById('pincode').value;
-                location = 'https://indiapincodelocator.herokuapp.com/api/' + response;
-                return false;
+
+<head>
+    <title>India Pincode Locator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin: 1%;
+        }
+
+        .logo {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        h1 {
+            margin-top: 0px;
+        }
+
+        .syntax {
+            font-family: monospace;
+            font-size: x-large;
+        }
+
+        .box {
+            border-radius: 5px;
+            border-style: groove;
+            padding: 6px;
+            text-align: center;
+            width: 15em;
+            height: 1.8em;
+            vertical-align: middle;
+        }
+
+        .submit {
+            background-color: mediumblue;
+            color: white;
+            padding: 12px;
+            border-radius: 4px;
+            border-style: hidden;
+            vertical-align: middle;
+            box-shadow: 0px 2px 5px 0.1px #00000070;
+        }
+
+        *:focus {
+            outline: none;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            body,
+            p {
+                font-size: 20px;
             }
-            </script>
-            </body>
+        }
+
+        @media only screen and (max-width: 320px) {
+
+            body,
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+<body>
+    <img src="https://raw.githubusercontent.com/bhumijgupta/indiaPincodeLocator/master/logo.png" alt="India Pincode Locator" class="logo">
+    <h1>India Pincode Locator</h1>
+    <h3>Find details about pincode</h3>
+    <br>
+    <p class="syntax">Syntax: /api/pincode</p>
+
+    <form onSubmit="return getPincode();">
+        <input id="pincode" type="number" class="box" autofocus placeholder="Enter Pincode" min="0" minlength="6" maxlength="6" />&nbsp;
+        <input type="submit" class="submit" value="Submit" />
+    </form>
+    <script>
+        function getPincode() {
+            var response = document.getElementById('pincode').value;
+            location = 'https://indiapincodelocator.herokuapp.com/api/' + response;
+            return false;
+        }
+    </script>
+</body>
+
 </html>
