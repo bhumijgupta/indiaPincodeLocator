@@ -9,6 +9,24 @@ app.use(cors());
 jsonFile = fs.readFileSync(__dirname + "/data.json", "utf-8");
 jsonData = JSON.parse(jsonFile);
 
+app.get("/api/po/:po", (req, res) => {
+  var po = req.params.po;
+  var result;
+  for (let k in jsonData) {
+    if (jsonData[k].place_name == po) {
+      result = k;
+      break;
+    }
+  }
+  if (result == undefined) {
+    res.status(400);
+    res.send({
+      'error': 'Not Found'
+    });
+  } else {
+    res.send({"postal_code":result});
+  }
+});
 app.get("/api/:pincode", (req, res) => {
   var pincode = req.params.pincode;
   var result = jsonData[pincode];
