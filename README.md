@@ -9,7 +9,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![GitHub issues][githubissues-shield]][githubissues-url] ![Hacktoberfest 2019][hacktober2019-shield] ![GitHub forks][forks-shield] [![Open Source Love][opensourcelove-shield]][opensourcelove-url]![GitHub code size in bytes][codesize-shield] ![Twitter][twitter-shield] ![GitHub Hacktober Fest][hacktober-shield][![Actions Status][github-action-shield]][github-action-url]
+[![GitHub issues][githubissues-shield]][githubissues-url] ![Hacktoberfest 2019][hacktober2019-shield] ![GitHub forks][forks-shield] [![Open Source Love][opensourcelove-shield]][opensourcelove-url]![GitHub code size in bytes][codesize-shield] ![Twitter][twitter-shield] ![GitHub Hacktober Fest][hacktober-shield][![Actions Status][github-action-shield]][github-action-url] ![GitHub contributors](https://img.shields.io/github/contributors/bhumijgupta/indiaPincodeLocator?style=flat-square)
 
 <!-- PROJECT LOGO -->
 <br />
