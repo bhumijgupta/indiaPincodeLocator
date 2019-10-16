@@ -9,7 +9,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![GitHub issues][githubissues-shield]][githubissues-url] ![Hacktoberfest 2019][hacktober2019-shield] ![GitHub forks][forks-shield] [![Open Source Love][opensourcelove-shield]][opensourcelove-url] [![star this repo][starthisrepo-shield]][starthisrepo-url] ![GitHub code size in bytes][codesize-shield] ![Twitter][twitter-shield] ![GitHub Hacktober Fest][hacktober-shield][![Actions Status][github-action-shield]][github-action-url]
+[![GitHub issues][githubissues-shield]][githubissues-url] ![Hacktoberfest 2019][hacktober2019-shield] ![GitHub forks][forks-shield] [![Open Source Love][opensourcelove-shield]][opensourcelove-url]![GitHub code size in bytes][codesize-shield] ![Twitter][twitter-shield] ![GitHub Hacktober Fest][hacktober-shield][![Actions Status][github-action-shield]][github-action-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -54,7 +54,5 @@
 [githubissues-shield]: https://img.shields.io/github/issues/bhumijgupta/indiaPincodeLocator?style=for-the-badge
 [opensourcelove-url]: https://github.com/ellerbrock/open-source-badge/
 [opensourcelove-shield]: https://badges.frapsoft.com/os/mit/mit.svg?v=102
-[starthisrepo-url]: https://github.com/boennemann/badges
-[starthisrepo-shield]: http://githubbadges.com/star.svg?user=boennemann&repo=badges&style=flat
 [github-action-url]: https://github.com/bhumijgupta/indiaPincodeLocator/actions
 [github-action-shield]: https://github.com/bhumijgupta/indiaPincodeLocator/workflows/on-push/badge.svg
