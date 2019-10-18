@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+	<head>
+		<title>India Pincode Locator</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <head>
     <title>India Pincode Locator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,50 +26,45 @@
             display: block;
             transform: scale(1.14);
         }
+			/* body {
+				text-align: center;
+				font-family: 'Poppins', sans-serif;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				margin: 1%;
+			} */
 
-        h1 {
-            margin-top: 0px;
-        }
+			.logo {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
 
-        .syntax {
-            font-family: monospace;
-            font-size: x-large;
-        }
+			h1 {
+				margin-top: 0px;
+			}
 
-        .box {
-            border-radius: 5px;
-            border-style:hidden;
-            padding: 6px;
-            text-align: center;
-            width: 15em;
-            height: 1.8em;
-            vertical-align: middle;
-            box-shadow: 0px 2px 5px 0.1px #00000070;
-        }
+			.box {
+				border-style: groove;
+				padding: 6px;
+				text-align: center;
+				width: 15em;
+				height: 1.8em;
+				vertical-align: middle;
+			}
 
-        #info {
-            color:rgb(75, 75, 75);
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 17px;
-        }
-
-        #increaseSize {
-            transform: scale(1.35);
-        }
-
-        .submit {
-            background-color: mediumblue;
-            color: white;
-            padding: 12px;
-            border-radius: 4px;
-            border-style: hidden;
-            vertical-align: middle;
-            box-shadow: 0px 2px 5px 0.1px #00000070;
-        }
-
-        *:focus {
-            outline: none;
-        }
+			.submit {
+				font-family: 'Poppins', sans-serif;
+				font-weight: 700;
+				background-color: #d64545;
+				color: white;
+				padding: 9px 14px;
+				border-style: hidden;
+				vertical-align: middle;
+				letter-spacing: 1px;
+				cursor: default;
+			}
 
 
         input::placeholder {
@@ -79,26 +78,48 @@
             appearance: none;
             margin: 0;
         }
+			.submit:active {
+				background-color: #ca2020;
+			}
 
-        @media only screen and (max-width: 768px) {
+			*:focus {
+				outline: none;
+			}
 
-            body,
-            p {
-                font-size: 20px;
-            }
-        }
+			input[type='number']::-webkit-inner-spin-button,
+			input[type='number']::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				margin: 0;
+			}
 
-        @media only screen and (max-width: 320px) {
+			@media only screen and (max-width: 768px) {
+				body,
+				p {
+					font-size: 20px;
+				}
+			}
 
-            body,
-            p {
-                font-size: 14px;
-            }
-        }
-    </style>
+			@media only screen and (max-width: 320px) {
+				body,
+				p {
+					font-size: 14px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<img
+			src="https://raw.githubusercontent.com/bhumijgupta/indiaPincodeLocator/master/logo.png"
+			alt="India Pincode Locator"
+			class="logo"
+		/>
+		<p>Find details about any pincode</p>
+		<br />
+		<p class="syntax">Syntax: /api/pincode</p>
 
 <body>
-    <img src="https://raw.githubusercontent.com/bhumijgupta/indiaPincodeLocator/master/logo.png" alt="India Pincode Locator" class="logo">
     <!-- <h1>India Pincode Locator</h1> -->
     
     <!-- <p class="syntax">Syntax: /api/pincode</p> -->
@@ -128,5 +149,17 @@
         }
     </script>
 </body>
-
+		<script>
+			function getPincode() {
+				var response = document.getElementById('pincode').value;
+				location = '/api/' + response;
+				return false;
+			}
+			function getPincodeByPO() {
+				var response = document.getElementById('po').value;
+				location = '/api/po/' + response;
+				return false;
+			}
+		</script>
+	</body>
 </html>
